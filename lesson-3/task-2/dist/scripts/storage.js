@@ -1,4 +1,7 @@
-export const setItem = (key, value) => {
+import "core-js/modules/es.object.keys.js";
+export var setItem = function setItem(key, value) {
   localStorage.setItem(key, JSON.stringify(value));
 };
-export const getItem = key => JSON.parse(localStorage.getItem(key));
+export var getItem = function getItem(key) {
+  return JSON.parse(localStorage.getItem(key));
+};

@@ -6,8 +6,9 @@
         "targets": {
           "edge": 17,
           "firefox": 60,
-          "chrome":  60,
-          "safari": 11.1                                                      
+          "chrome": 60,
+          "safari": 11.1,
+          "browsers": "last 2 versions, > 1%"
         },
         "useBuiltIns": "usage",
         "corejs": 3,
