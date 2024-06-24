@@ -2,14 +2,12 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
-    path: __dirname + '/dist',
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         use: ['babel-loader'],
-        exclude: /node_modules/,
       },
       {
         test: /\.s?css$/,
@@ -29,9 +27,5 @@ module.exports = {
         ],
       },
     ],
-  },
-  resolve: {
-    extensions: ['.js', '.json'],
-    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
   },
 };

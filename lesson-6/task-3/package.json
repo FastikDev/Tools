@@ -9,7 +9,7 @@
     "copy:html": "cp ./src/index.html ./dist/index.html",
     "build:scripts": "webpack -p",
     "clean": "rmdir /s /q .\\dist",
-    "build": "npm-run-all clean build:scripts copy:html",
+    "build": "npm-run-all build:scripts copy:html",
     "watch": "webpack -d --devtool eval-source-maps -w"
   },
   "keywords": [],
