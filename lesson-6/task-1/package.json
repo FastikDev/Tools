@@ -1,0 +1,25 @@
+{
+  "name": "task-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "watch": "webpack --mode development --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.7",
+    "file-loader": "^6.2.0",
+    "sass-loader": "^10.5.2",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1"
+  }
+}
