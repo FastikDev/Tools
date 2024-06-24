@@ -1,3 +1,4 @@
+const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -32,25 +33,19 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.json'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+  },
   optimization: {
     minimize: true,
     minimizer: [
       new TerserPlugin({
         terserOptions: {
-          ecma: 2020,
-          warnings: false,
-          parse: {},
-          compress: {},
+          ecma: 5,
           output: {
             comments: false,
-            beautify: false,
           },
-          toplevel: false,
-          nameCache: null,
-          ie8: false,
-          keep_classnames: undefined,
-          keep_fnames: false,
-          safari10: false,
         },
       }),
     ],

@@ -9,7 +9,7 @@
     "copy:html": "cp ./src/index.html ./dist/index.html",
     "build:scripts": "webpack -p",
     "clean": "rmdir /s /q .\\dist",
-    "build": "npm-run-all clean build:scripts copy:html",
+    "build": "npm-run-all build:scripts copy:html",
     "watch": "webpack -d --devtool eval-source-maps -w"
   },
   "keywords": [],
@@ -27,12 +27,12 @@
     "sass": "^1.77.6",
     "sass-loader": "^10.5.2",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^4.2.3",
     "url-loader": "^4.1.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "core-js": "^3.37.1"
+    "core-js": "^3.37.1",
+    "terser-webpack-plugin": "^4.2.3"
   }
 }
