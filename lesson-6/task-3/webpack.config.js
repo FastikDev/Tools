@@ -41,8 +41,6 @@ module.exports = {
           warnings: false,
           parse: {},
           compress: {},
-          mangle: true,
-          module: false,
           output: {
             comments: false,
             beautify: false,
