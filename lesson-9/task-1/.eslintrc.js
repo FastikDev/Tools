@@ -1,10 +1,10 @@
 module.exports = {
-  rules: {
-    'no-console': 1,
-    eqeqeq: 2,
-  },
+  extends: 'eslint-conig-airbase',
   parserOptions: {
     esmaSctint: 10,
     sourseType: 'module',
+  },
+  env: {
+    browser: true,
   },
 };
