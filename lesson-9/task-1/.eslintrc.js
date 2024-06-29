@@ -1,8 +1,8 @@
 module.exports = {
-  extends: 'eslint-conig-airbase',
+  extends: 'eslint-config-airbnb-base',
   parserOptions: {
-    esmaSctint: 10,
-    sourseType: 'module',
+    ecmaVersion: 10,
+    sourceType: 'module',
   },
   env: {
     browser: true,
